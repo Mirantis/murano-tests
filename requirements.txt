@@ -1,0 +1,13 @@
+testtools
+testresources
+python-heatclient
+python-muranoclient
+python-keystoneclient
+requests
+nose
+nose-exclude
+nosehtmloutput>=0.0.3
+nosexcover
+openstack-doc-tools>=0.23
+openstack.nose_plugin>=0.7
+oslo.config>=1.11.0
