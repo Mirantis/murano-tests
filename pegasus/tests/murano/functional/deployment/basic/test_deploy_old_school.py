@@ -46,9 +46,9 @@ class MuranoOldSchoolTest(core.MuranoTestsCore):
         post_body = {
             "instance": {
                 "flavor": self.flavor,
-                "image":
-                    "hdp-sandbox",
+                "image": self.hdp_image,
                 "assignFloatingIp": True,
+                "availabilityZone": self.availability_zone,
                 "?": {
                     "type": "io.murano.resources.LinuxMuranoInstance",
                     "id": str(uuid.uuid4())
@@ -81,6 +81,7 @@ class MuranoOldSchoolTest(core.MuranoTestsCore):
                 "image": self.linux,
                 "assignFloatingIp": True,
                 "keyname": self.keyname,
+                "availabilityZone": self.availability_zone,
                 "?": {
                     "type": "io.murano.resources.LinuxMuranoInstance",
                     "id": str(uuid.uuid4())
@@ -107,6 +108,7 @@ class MuranoOldSchoolTest(core.MuranoTestsCore):
                 "image": self.linux,
                 "assignFloatingIp": True,
                 "keyname": self.keyname,
+                "availabilityZone": self.availability_zone,
                 "?": {
                     "type": "io.murano.resources.LinuxMuranoInstance",
                     "id": str(uuid.uuid4())
@@ -155,6 +157,7 @@ class MuranoOldSchoolTest(core.MuranoTestsCore):
                 "image": self.linux,
                 "keyname": self.keyname,
                 "assignFloatingIp": True,
+                "availabilityZone": self.availability_zone,
                 "?": {
                     "type": "io.murano.resources.LinuxMuranoInstance",
                     "id": str(uuid.uuid4())
@@ -186,6 +189,7 @@ class MuranoOldSchoolTest(core.MuranoTestsCore):
                 "image": self.linux,
                 "keyname": self.keyname,
                 "assignFloatingIp": True,
+                "availabilityZone": self.availability_zone,
                 "?": {
                     "type": "io.murano.resources.LinuxMuranoInstance",
                     "id": str(uuid.uuid4())
@@ -217,6 +221,7 @@ class MuranoOldSchoolTest(core.MuranoTestsCore):
                 "image": self.linux,
                 "keyname": self.keyname,
                 "assignFloatingIp": True,
+                "availabilityZone": self.availability_zone,
                 "?": {
                     "type": "io.murano.resources.LinuxMuranoInstance",
                     "id": str(uuid.uuid4())
@@ -251,6 +256,7 @@ class MuranoOldSchoolTest(core.MuranoTestsCore):
                 "keyname": self.keyname,
                 "flavor": self.flavor,
                 "image": self.docker,
+                "availabilityZone": self.availability_zone,
                 "?": {
                     "type": "io.murano.resources.LinuxMuranoInstance",
                     "id": str(uuid.uuid4())
